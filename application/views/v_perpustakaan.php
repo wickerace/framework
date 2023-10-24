@@ -5,7 +5,8 @@
              <div class="col-12">
                  <div class="card">
                      <div class="card-header">
-                         <a href="<?= base_url('index.php/Peminjam/insert'); ?>" class="btn btn-block btn-primary btn-lg col-md-2">TAMBAH DATA</a>
+                         <?php echo $this->session->flashdata('msg'); ?>
+                         <a href="<?= base_url('Peminjam/insert'); ?>" class="btn btn-block btn-primary btn-lg col-md-2">TAMBAH DATA</a>
                      </div>
                      <!-- /.card-header -->
                      <div class="card-body">
@@ -32,7 +33,7 @@
                                          <td><?= $data->tgl_kembali; ?></td>
                                          <td>
                                              <a href="#" class="btn btn-block btn-success btn-sm"><i class="nav-icon fas fa-pen"></i></a>
-                                             <a href="#" class="btn btn-block btn-danger btn-sm"><i class="nav-icon fas fa-trash"></i></a>
+                                             <a href="<?= base_url('Peminjam/delete');  ?>" class="btn btn-block btn-danger btn-sm"><i class="nav-icon fas fa-trash"></i></a>
                                          </td>
                                      </tr>
                                  <?php endforeach; ?>

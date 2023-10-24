@@ -5,7 +5,7 @@
              <div class="col-12">
                  <div class="card">
                      <div class="card-header">
-                         <a href="<?= base_url('index.php/Buku/insert'); ?>" class="btn btn-block btn-primary btn-lg col-md-2">TAMBAH DATA</a>
+                         <a href="<?= base_url('Buku/insert'); ?>" class="btn btn-block btn-primary btn-lg col-md-2">TAMBAH DATA</a>
                      </div>
                      <!-- /.card-header -->
                      <div class="card-body">

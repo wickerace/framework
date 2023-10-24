@@ -4,7 +4,7 @@
     </div>
 
 
-    <form method="post" class="<?= base_url('index.php/Buku/insert'); ?>">
+    <form method="post" class="<?= base_url('Buku/insert'); ?>">
         <div class="card-body">
             <div class="form-group">
                 <label for="exampleInputPassword1">ID Buku</label>

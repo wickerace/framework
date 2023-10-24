@@ -4,7 +4,7 @@
     </div>
 
 
-    <form method="post" class="<?= base_url('index.php/Peminjam/update'); ?>">
+    <form method="post" class="<?= base_url('Peminjam/update'); ?>">
         <div class="card-body">
             <div class="form-group">
                 <label for="exampleInputPassword1">Nama Peminjam</label>

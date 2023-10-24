@@ -26,5 +26,12 @@ class PeminjamModel extends CI_Model //membuat sebuah model aplikasi web
         );
 
         $this->db->insert('bryan_peminjam', $insert_data);
+        return $this->db->affected_rows();
+    }
+
+    function delete($id_peminjam) //menghapus data perpustakaan
+    {
+        $this->db->where('id_peminjam', $id_peminjam);
+        $this->db->delete('bryan_peminjam');
     }
 }
